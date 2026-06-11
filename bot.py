@@ -14,8 +14,7 @@ from telegram.ext import (
 
 from openpyxl import Workbook
 
-TOKEN = os.environ.get("TOKEN")
-
+TOKEN = os.getenv("TOKEN").strip()
 # =========================
 # ADMIN SAFE
 # =========================
